@@ -27,7 +27,7 @@
                with font-awesome or any other icon font library -->
                 <li class="nav-item">
                     <a href="{{ route('admin.dashboard') }}" class="nav-link">
-                        <i class="nav-icon fas fa-th"></i>
+                        <i class="fas fa-home"></i>
                         <p>
                             الصفحة الرئيسية
                         </p>
@@ -35,25 +35,25 @@
                 </li>
                 <li class="nav-item">
                     <a href="{{ route('admin.adminpanalsetting.index') }}" class="nav-link">
-                        <i class="nav-icon fas fa-th"></i>
+                        <i class="fas fa-th"></i>
                         <p>
                             الضبط العام
                         </p>
                     </a>
                 </li>
 
-                <li class="nav-item">
+                {{-- <li class="nav-item">
                     <a href="{{ route('admin.treasuiers.index') }}" class="nav-link">
                         <i class="nav-icon fas fa-th"></i>
                         <p>
                             بيانات الخزن
                         </p>
                     </a>
-                </li>
+                </li> --}}
 
                 <li class="nav-item">
                     <a href="{{ route('admin.cars.index') }}" class="nav-link">
-                        <i class="nav-icon fas fa-th"></i>
+                        <i class="fas fa-car"></i>
                         <p>
                            السيارات
                         </p>
@@ -61,29 +61,29 @@
                 </li>
 
                  <li class="nav-item">
-                    <a href="{{ route('admin.cars.index') }}" class="nav-link">
-                        <i class="nav-icon fas fa-th"></i>
+                    <a href="{{ route('admin.customers.index') }}" class="nav-link">
+                        <i class="fas fa-users"></i>
                         <p>
                             العملاء
                         </p>
                     </a>
                 </li> <li class="nav-item">
-                    <a href="{{ route('admin.cars.index') }}" class="nav-link">
-                        <i class="nav-icon fas fa-th"></i>
+                    <a href="{{ route('admin.suppliers.index') }}" class="nav-link">
+                        <i class="fas fa-user-shield"></i>
                         <p>
                              الموردين
                         </p>
                     </a>
                 </li> <li class="nav-item">
-                    <a href="{{ route('admin.cars.index') }}" class="nav-link">
-                        <i class="nav-icon fas fa-th"></i>
+                    <a href="{{ route('admin.sale_bills.index') }}" class="nav-link">
+                        <i class="fas fa-shopping-cart"></i>
                         <p>
                              المبيعات
                         </p>
                     </a>
                 </li> <li class="nav-item">
-                    <a href="{{ route('admin.cars.index') }}" class="nav-link">
-                        <i class="nav-icon fas fa-th"></i>
+                    <a href="{{ route('admin.purchase_bills.index') }}" class="nav-link">
+                        <i class="fas fa-truck-loading"></i>
                         <p>
                              المشتريات
                         </p>
@@ -91,8 +91,8 @@
                 </li>
 
                  </li> <li class="nav-item">
-                    <a href="{{ route('admin.cars.index') }}" class="nav-link">
-                        <i class="nav-icon fas fa-th"></i>
+                    <a href="{{ route('admin.employees.index') }}" class="nav-link">
+                        <i class="fas fa-users-cog"></i>
                         <p>
                              الموظفون
                         </p>
@@ -100,15 +100,15 @@
                 </li>
 
                  </li> <li class="nav-item">
-                    <a href="{{ route('admin.cars.index') }}" class="nav-link">
-                        <i class="nav-icon fas fa-th"></i>
+                    <a href="{{ route('admin.installments.index') }}" class="nav-link">
+                        <i class="fas fa-calendar-alt"></i>
                         <p>
                              الأقساط
                         </p>
                     </a>
                 </li> </li> <li class="nav-item">
-                    <a href="{{ route('admin.cars.index') }}" class="nav-link">
-                        <i class="nav-icon fas fa-th"></i>
+                    <a href="{{ route('admin.reports.index') }}" class="nav-link">
+                        <i class="fas fa-chart-bar"></i>
                         <p>
                              التقارير
                         </p>
@@ -116,15 +116,15 @@
                 </li>
 
             </li> </li> <li class="nav-item">
-                <a href="{{ route('admin.cars.index') }}" class="nav-link">
-                    <i class="nav-icon fas fa-th"></i>
+                <a href="{{ route('admin.permission.index') }}" class="nav-link">
+                    <i class="fas fa-lock"></i>
                     <p>
                          الصلاحيات
                     </p>
                 </a>
             </li>  </li> </li> <li class="nav-item">
-                <a href="{{ route('admin.cars.index') }}" class="nav-link">
-                    <i class="nav-icon fas fa-th"></i>
+                <a href="{{ route('admin.users.index') }}" class="nav-link">
+                    <i class="fas fa-user"></i>
                     <p>
                          المستخدمين
                     </p>

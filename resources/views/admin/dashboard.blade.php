@@ -5,6 +5,7 @@
 @endsection
 
 @section('contentHeader')
+<i class="fas fa-home"></i>
 الرئيسية
 @endsection
 
