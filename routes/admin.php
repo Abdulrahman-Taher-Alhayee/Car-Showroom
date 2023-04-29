@@ -10,7 +10,7 @@ use App\Http\Controllers\Admin\CustomersController;
 use App\Http\Controllers\Admin\SuppliersController;
 use App\Http\Controllers\Admin\EmployeesController;
 use App\Http\Controllers\Admin\Sale_billsController;
-use App\Http\Controllers\Admin\Purchases_billsController;
+use App\Http\Controllers\Admin\purchase_billsController;
 use App\Http\Controllers\Admin\InstallmentsController;
 use App\Http\Controllers\Admin\ReportsController;
 
@@ -47,6 +47,11 @@ Route::post('/treasuiers/ajax_search}',[TreasuiersController::class,'ajax_search
 /*                 start cars                  */
 Route::get('/cars/index',[CarsController::class,'index'])->name('admin.cars.index');
 Route::get('/cars/create',[CarsController::class,'create'])->name('admin.cars.create');
+Route::post('/cars/store',[CarsController::class,'store'])->name('admin.cars.store');
+Route::get('/cars/edit/{id}',[CarsController::class,'edit'])->name('admin.cars.edit');
+Route::post('/cars/update/{id}',[CarsController::class,'update'])->name('admin.cars.update');
+Route::get('/cars/delete/{id}',[CarsController::class,'delete'])->name('admin.cars.delete');
+Route::post('/cars/ajax_search}',[CarsController::class,'ajax_search'])->name('admin.cars.ajax_search');
 /*                 End cars                  */
 
 /*                 start customers                  */
@@ -66,11 +71,24 @@ Route::post('/customers/ajax_search}',[CustomersController::class,'ajax_search']
 /*                 start suppliers                  */
 Route::get('/suppliers/index',[SuppliersController::class,'index'])->name('admin.suppliers.index');
 Route::get('/suppliers/create',[SuppliersController::class,'create'])->name('admin.suppliers.create');
+Route::post('/suppliers/store',[SuppliersController::class,'store'])->name('admin.suppliers.store');
+Route::get('/suppliers/edit/{id}',[SuppliersController::class,'edit'])->name('admin.suppliers.edit');
+Route::post('/suppliers/update/{id}',[SuppliersController::class,'update'])->name('admin.suppliers.update');
+Route::get('/suppliers/delete/{id}',[SuppliersController::class,'delete'])->name('admin.suppliers.delete');
+Route::post('/suppliers/ajax_search',[SuppliersController::class,'ajax_search'])->name('admin.suppliers.ajax_search');
+
 /*                 End suppliers                  */
 
 /*                 start employees                  */
 Route::get('/employees/index',[EmployeesController::class,'index'])->name('admin.employees.index');
 Route::get('/employees/create',[EmployeesController::class,'create'])->name('admin.employees.create');
+Route::post('/employees/store',[EmployeesController::class,'store'])->name('admin.employees.store');
+Route::get('/employees/edit/{id}',[EmployeesController::class,'edit'])->name('admin.employees.edit');
+Route::post('/employees/update/{id}',[EmployeesController::class,'update'])->name('admin.employees.update');
+Route::get('/employees/delete/{id}',[EmployeesController::class,'delete'])->name('admin.employees.delete');
+Route::post('/employees/ajax_search',[EmployeesController::class,'ajax_search'])->name('admin.employees.ajax_search');
+Route::get('/employees/show/{id}',[EmployeesController::class,'show'])->name('admin.employees.show');
+
 /*                 End employees                  */
 
 /*                 start sale_bills                  */
@@ -79,8 +97,14 @@ Route::get('/sale_bills/create',[Sale_billsController::class,'create'])->name('a
 /*                 End sale_bills                  */
 
 /*                 start purchase_bills                  */
-Route::get('/purchase_bills/index',[Purchase_billsController::class,'index'])->name('admin.purchase_bills.index');
-Route::get('/purchase_bills/create',[Purchase_billsController::class,'create'])->name('admin.purchase_bills.create');
+Route::get('/purchase_bills/index',[purchase_billsController::class,'index'])->name('admin.purchase_bills.index');
+Route::get('/purchase_bills/create',[purchase_billsController::class,'create'])->name('admin.purchase_bills.create');
+Route::post('/purchase_bills/store',[purchase_billsController::class,'store'])->name('admin.purchase_bills.store');
+Route::get('/purchase_bills/edit/{id}',[purchase_billsController::class,'edit'])->name('admin.purchase_bills.edit');
+Route::post('/purchase_bills/update/{id}',[purchase_billsController::class,'update'])->name('admin.purchase_bills.update');
+Route::get('/purchase_bills/delete/{id}',[purchase_billsController::class,'delete'])->name('admin.purchase_bills.delete');
+Route::post('/purchase_bills/ajax_search}',[purchase_billsController::class,'ajax_search'])->name('admin.purchase_bills.ajax_search');
+Route::get('/purchase_bills/show/{id}',[purchase_billsController::class,'show'])->name('admin.purchase_bills.show');
 /*                 End purchase_bills                  */
 
 /*                 start installments                  */

@@ -1,16 +1,16 @@
 @extends('layouts.admin')
 
 @section('title')
-    إضافة عميل جديد
+    إضافة مورد جديد
 @endsection
 
 @section('contentHeader')
-    <i class="fas fa-users"></i>
-    العملاء
+    <i class="fas fa-user-shield"></i>
+    الموردين
 @endsection
 
 @section('contentHeaderLink')
-    <a href="{{ route('admin.customers.index') }}">العملاء</a>
+    <a href="{{ route('admin.suppliers.index') }}">الموردين</a>
 @endsection
 
 @section('contentHeaderActive')
@@ -22,17 +22,17 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title card_title_center" style="font-weight: bold">إضافة عميل جديد</h3>
+                    <h3 class="card-title card_title_center" style="font-weight: bold">إضافة مورد جديد</h3>
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">
 
-                    <form action="{{ route('admin.customers.store') }}" method="POST" enctype="multipart/form-data">
+                    <form action="{{ route('admin.suppliers.store') }}" method="POST" enctype="multipart/form-data">
                         @csrf
                         <div class="form-group">
-                            <label>إسم العميل</label>
+                            <label>إسم المورد</label>
                             <input name="name" id="name" class="form-control" value="{{ old('name') }}"
-                                placeholder="أدخل إسم العميل" oninvalid="setCustomValidity('من فضلك أدخل هذه الحقل')"
+                                placeholder="أدخل إسم المورد" oninvalid="setCustomValidity('من فضلك أدخل هذه الحقل')"
                                 onchange="try{setCustomValidity('')}catch(e){}">
                         </div>
 
@@ -41,9 +41,9 @@
                         @enderror
 
                         <div class="form-group">
-                            <label> رقم العميل</label>
+                            <label> رقم المورد</label>
                             <input oninput="this.value=this.value.replace(/[^0-9]/g,'');" name="phone" id="phone"
-                                class="form-control" value="{{ old('phone') }}" placeholder="أدخل رقم العميل"
+                                class="form-control" value="{{ old('phone') }}" placeholder="أدخل رقم المورد"
                                 oninvalid="setCustomValidity('من فضلك أدخل هذه الحقل')"
                                 onchange="try{setCustomValidity('')}catch(e){}">
                         </div>
@@ -55,7 +55,7 @@
                         <div class="form-group">
                             <label>الإيميل </label>
                             <input name="email" id="email" class="form-control" value="{{ old('email') }}"
-                                placeholder="أدخل إيميل العميل" oninvalid="setCustomValidity('من فضلك أدخل هذه الحقل')"
+                                placeholder="أدخل إيميل المورد" oninvalid="setCustomValidity('من فضلك أدخل هذه الحقل')"
                                 onchange="try{setCustomValidity('')}catch(e){}">
                         </div>
 
@@ -66,7 +66,7 @@
                         <div class="form-group">
                             <label>العنوان </label>
                             <input name="address" id="address" class="form-control" value="{{ old('address') }}"
-                                placeholder="أدخل عنوان العميل" oninvalid="setCustomValidity('من فضلك أدخل هذه الحقل')"
+                                placeholder="أدخل عنوان المورد" oninvalid="setCustomValidity('من فضلك أدخل هذه الحقل')"
                                 onchange="try{setCustomValidity('')}catch(e){}">
                         </div>
 
@@ -78,7 +78,7 @@
                             <button type="submit" class="btn btn-primary btn-sm">
                                 <i class="fas fa-plus"></i>
                                 إضافة </button>
-                            <a href="{{ route('admin.customers.index') }}" class="btn btn-sm btn-danger">
+                            <a href="{{ route('admin.suppliers.index') }}" class="btn btn-sm btn-danger">
                                 <i class="fas fa-times"></i>
                                 إلغاء</a>
                         </div>

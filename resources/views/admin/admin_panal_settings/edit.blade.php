@@ -5,6 +5,7 @@
 @endsection
 
 @section('contentHeader')
+<i class="fas fa-cog"></i>
     الضبط
 @endsection
 
@@ -71,7 +72,16 @@
                         </div>
 
                         <div class="form-group text-center">
-                            <button type="submit" class="btn btn-primary btn-sm">حفظ التعديلات</button>
+                            <div class="col-12">
+                                <div class="form-group text-center">
+                                    <button type="submit" class="btn btn-primary btn-sm">
+                                        <i class="fas fa-save"></i>
+                                        حفظ التعديلات</button>
+                                    <a href="{{ route('admin.adminpanalsetting.index') }}" class="btn btn-sm btn-danger">
+                                        <i class="fas fa-times"></i>
+                                        إلغاء</a>
+                                </div>
+                            </div>
                         </div>
                     </form>
                     @else

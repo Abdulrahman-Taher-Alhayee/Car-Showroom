@@ -11,7 +11,7 @@ class Purchase_bill extends Model
     protected $table='purchase_bills';
 
     protected $fillable=[
-        'date','car_id','supplier_id','total_price','discount','tax','net_amount','comments','created_at','updated_at','added_by',
+        'date','bill_number','car_id','supplier_id','bill_type','total_price','discount','tax','net_amount','comments','created_at','updated_at','added_by',
         'updated_by','com_code'
     ];
 

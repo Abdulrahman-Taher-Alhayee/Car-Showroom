@@ -6,10 +6,10 @@
                         <table id="example2" class="table table-bordered table-hover">
                            <thead class="custom_thead">
                             <th>مسلسل</th>
-                            <th>إسم العميل</th>
-                            <th>رقم العميل</th>
-                            <th>إيميل العميل</th>
-                            <th>عنوان العميل</th>
+                            <th>إسم المورد</th>
+                            <th>رقم المورد</th>
+                            <th>إيميل المورد</th>
+                            <th>عنوان المورد</th>
                             <th>تاريخ الإضافة</th>
                             <th>تاريخ التحديث</th>
                             <th>  تحكم </th>
@@ -56,11 +56,11 @@
                                     @endif
                                 </td>
                                 <td>
-                                    <a href="{{ route('admin.customers.edit',$info->id) }}" class="btn btn-sm btn-primary">
+                                    <a href="{{ route('admin.suppliers.edit',$info->id) }}" class="btn btn-sm btn-primary">
                                         <i class="fas fa-edit"></i> تعديل</a>
                                     <a href="{{ $info->id }}" class="btn btn-sm btn-info">
                                         <i class="fas fa-eye"></i> عرض</a>
-                                    <a href="{{ route('admin.customers.delete',$info->id) }}" class="btn btn-sm are_you_shue btn-danger">
+                                    <a href="{{ route('admin.suppliers.delete',$info->id) }}" class="btn btn-sm are_you_shue btn-danger">
                                         <i class="fas fa-trash"></i> حذف</a>
                                 </td>
                             </tr>

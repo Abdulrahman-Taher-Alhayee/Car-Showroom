@@ -12,7 +12,7 @@ class CustomersController extends Controller
 {
     public function index()
     {
-        $data = Customer::select()->orderby('id', 'DESC')->paginate(PAGINATION_COUNT);
+        $data = Customer::select()->orderby('id', 'ASC')->paginate(PAGINATION_COUNT);
 
         if (!empty($data)) {
             foreach ($data as $info) {

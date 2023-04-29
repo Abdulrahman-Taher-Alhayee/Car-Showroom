@@ -33,15 +33,33 @@
                         </p>
                     </a>
                 </li>
+
+                {{-- <li class="nav-item has-treeview menu-open">
+                    <a href="#" class="nav-link active" style="background-color: transparent">
+                        <p>الموظفون
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+
+                        <li class="nav-item">
+                            <a href="{{ route('admin.employees.index') }}" class="nav-link">
+                                <i class="fas fa-users-cog"></i>
+                                <p>
+                                    إضافة موظف جديد
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </li> --}}
                 <li class="nav-item">
-                    <a href="{{ route('admin.adminpanalsetting.index') }}" class="nav-link">
-                        <i class="fas fa-th"></i>
+                    <a href="{{ route('admin.employees.index') }}" class="nav-link">
+                        <i class="fas fa-users-cog"></i>
                         <p>
-                            الضبط العام
+                            الموظفون
                         </p>
                     </a>
                 </li>
-
                 {{-- <li class="nav-item">
                     <a href="{{ route('admin.treasuiers.index') }}" class="nav-link">
                         <i class="nav-icon fas fa-th"></i>
@@ -55,82 +73,91 @@
                     <a href="{{ route('admin.cars.index') }}" class="nav-link">
                         <i class="fas fa-car"></i>
                         <p>
-                           السيارات
+                            السيارات
                         </p>
                     </a>
                 </li>
 
-                 <li class="nav-item">
+                <li class="nav-item">
                     <a href="{{ route('admin.customers.index') }}" class="nav-link">
                         <i class="fas fa-users"></i>
                         <p>
                             العملاء
                         </p>
                     </a>
-                </li> <li class="nav-item">
+                </li>
+                <li class="nav-item">
                     <a href="{{ route('admin.suppliers.index') }}" class="nav-link">
                         <i class="fas fa-user-shield"></i>
                         <p>
-                             الموردين
+                            الموردين
                         </p>
                     </a>
-                </li> <li class="nav-item">
+                </li>
+                <li class="nav-item">
                     <a href="{{ route('admin.sale_bills.index') }}" class="nav-link">
                         <i class="fas fa-shopping-cart"></i>
                         <p>
-                             المبيعات
+                            المبيعات
                         </p>
                     </a>
-                </li> <li class="nav-item">
+                </li>
+                <li class="nav-item">
                     <a href="{{ route('admin.purchase_bills.index') }}" class="nav-link">
                         <i class="fas fa-truck-loading"></i>
                         <p>
-                             المشتريات
+                            المشتريات
                         </p>
                     </a>
                 </li>
 
-                 </li> <li class="nav-item">
-                    <a href="{{ route('admin.employees.index') }}" class="nav-link">
-                        <i class="fas fa-users-cog"></i>
-                        <p>
-                             الموظفون
-                        </p>
-                    </a>
                 </li>
-
-                 </li> <li class="nav-item">
+                <li class="nav-item">
                     <a href="{{ route('admin.installments.index') }}" class="nav-link">
                         <i class="fas fa-calendar-alt"></i>
                         <p>
-                             الأقساط
+                            الأقساط
                         </p>
                     </a>
-                </li> </li> <li class="nav-item">
+                </li>
+                </li>
+                <li class="nav-item">
                     <a href="{{ route('admin.reports.index') }}" class="nav-link">
                         <i class="fas fa-chart-bar"></i>
                         <p>
-                             التقارير
+                            التقارير
                         </p>
                     </a>
                 </li>
 
-            </li> </li> <li class="nav-item">
-                <a href="{{ route('admin.permission.index') }}" class="nav-link">
-                    <i class="fas fa-lock"></i>
-                    <p>
-                         الصلاحيات
-                    </p>
-                </a>
-            </li>  </li> </li> <li class="nav-item">
-                <a href="{{ route('admin.users.index') }}" class="nav-link">
-                    <i class="fas fa-user"></i>
-                    <p>
-                         المستخدمين
-                    </p>
-                </a>
-            </li>
-
+                </li>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ route('admin.permission.index') }}" class="nav-link">
+                        <i class="fas fa-lock"></i>
+                        <p>
+                            الصلاحيات
+                        </p>
+                    </a>
+                </li>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ route('admin.users.index') }}" class="nav-link">
+                        <i class="fas fa-user"></i>
+                        <p>
+                            المستخدمين
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ route('admin.adminpanalsetting.index') }}" class="nav-link">
+                        <i class="fas fa-cog"></i>
+                        <p>
+                            الضبط العام
+                        </p>
+                    </a>
+                </li>
             </ul>
         </nav>
         <!-- /.sidebar-menu -->
